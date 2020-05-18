@@ -1,0 +1,144 @@
+body{
+  
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-image: url("../rimages/Background_Night.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;    
+}
+section{
+    height: 100vh;
+    position: relative;
+}
+
+#status{
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 25px;
+    font-weight: bold;
+}
+#basket{
+    position: absolute;
+    bottom: 100px;
+    left:20px;
+    width: 120px;
+    z-index: 2;
+}
+#basketScore{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    bottom: 110px;
+    left: 70px;
+    color: yellow;
+    font-weight: bold;
+    font-size: 30px;
+    z-index:2;
+}
+
+.eggFall{
+    position: absolute;
+    top:100px;
+    z-index: -1; 
+}
+#egg1{
+    left:370px;
+}
+#egg2{
+    left:740px;
+}
+#egg3{
+    left:1110px;
+}
+.eggFall img{
+    width: 70%;
+}
+
+ h1{
+    color: white;
+    font-weight: bold;
+    font-size: 70px;
+    letter-spacing: -0.1em;
+    word-spacing: 10px;
+}
+.start{
+    background-color: #4C4660;
+    border: 4px solid #FF4571;
+    border-radius: 70px;
+    z-index: 100;
+}
+.gameOver{
+    background-color: #4C4660;
+    border: 4px solid #FF4571;
+    border-radius: 70px;
+    display: none;
+    z-index: 100;
+}
+#finalScore{
+    color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+}
+.btn-style{
+    color: white;
+    background-color: #ff5f84;
+    border: 4px solid white;
+    border-radius: 100px;
+    position:absolute;
+    top: 127%;
+    left: 50%;
+    transform: translate(-50%,-127%);
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.1 !important;
+    letter-spacing: -3px;
+    padding: 0 4rem !important;    
+}
+.btn-position{
+    top: 120%;
+}
+.btn-style:hover{
+    color: white;
+}
+#broken{
+    position: absolute;
+    bottom: 9%;
+    width: 65%;
+    /* background-color: rgba(204, 138, 126, 0.685); */
+} 
+.broke{
+    visibility: hidden;
+}
+#floor{
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.delete-position{
+    position:static;
+}
+@media screen and (max-width:600px){
+    .eggFall{
+        top:10px;
+        left: 10%;  
+    }
+    .eggFall img{
+        width: 50%;
+    }
+     h1{
+        font-size: 50px; 
+    }
+    .btn-style{
+        font-size: 38px;
+        padding: 0 1rem !important;
+    }
+    #broken{
+        width: 100%;
+    }
+}
