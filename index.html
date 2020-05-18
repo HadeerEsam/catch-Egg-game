@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700,900">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+    
+ <section id="gameContainer">
+            <!-- status bar -->
+    <div class="container-fluid px-5">
+        <div id="status" class="row py-1 justify-content-between">
+            <div class="col-6">
+                <p >Score <span id="score" >0</span> </p>
+            </div>
+            <div class="col-6 text-right">
+                <p >Life <span id="life">10</span></p>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- chicken section -->
+    <div class="container chick  ">    
+        <div class="row justify-content-around text-center">
+            <div class="col-md-2 col-3 delete-position">
+                <div class="chicken ">
+                    <img src="rimages/Happy_hen.svg" class="w-100 animate__animated animate__pulse animate__infinite " alt="">
+                    <div id="egg1" class="eggFall"><img  src="rimages/Happy_Egg.svg" class=" " alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-3 delete-position">
+                <div class="chicken ">
+                    <img src="rimages/Happy_hen.svg" class="w-100 animate__animated animate__pulse animate__infinite" alt="">
+                    <div id="egg2" class="eggFall"><img  src="rimages/Happy_Egg.svg" class=" " alt=""></div>
+
+                </div>
+            </div>
+            <div class="col-md-2 col-3 delete-position">
+                <div class="chicken ">
+                    <img src="rimages/Happy_hen.svg" class="w-100 animate__animated animate__pulse animate__infinite" alt="">
+                    <div id="egg3" class="eggFall"><img  src="rimages/Happy_Egg.svg" class=" " alt=""></div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start and game over section  -->
+    <div class="container py-5 mt-5">
+        <div class="row justify-content-center align-items-center text-center">
+            <div class="col-8 ">
+                <div id="start" class="start  position-relative">
+                    <h1 class="pb-5 pt-3 ">HAPPY EGGS</h1>
+                    <button id="play" class="btn btn-style">Play</button>
+                    
+                </div>
+            </div>
+
+            <div class="col-8 ">
+                <div id="gameOver" class="gameOver py-3  position-relative">
+                    <h1 class="pb-2 ">HAPPY EGGS</h1>
+                    <h2 id="finalScore"class="pb-3"></h2>
+                     <button id="playAgain" class="btn btn-style btn-position">Play Again</button>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+    <!-- audio section -->
+    <audio  id="audio"></audio>
+    <audio  id="audioScore"></audio>
+
+    <!-- basket section -->
+    <div class="basketContainer">
+        <img id="basket" src="rimages/Basket.svg" class="d-inline-block"  alt="">
+        <span id="basketScore"></span>
+    </div>
+    
+    <!-- broken eggs section -->
+    <div  class="container d-flex justify-content-center">
+        <div id="broken" class="row justify-content-between">
+            <div class="col-md-2 col-3">
+                <div  class="broken ">
+                    <img src="rimages/Broken_Egg.svg" class="w-100 broke" alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-3">
+                <div  class="broken">
+                    <img src="rimages/Broken_Egg.svg" class="w-100 broke " alt="">
+                </div>
+            </div>
+            <div class="col-md-2 col-3">
+                <div  class="broken">
+                    <img src="rimages/Broken_Egg.svg" class="w-100 broke " alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- egg limits -->
+    <div id="floor"></div>
+    
+ </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
